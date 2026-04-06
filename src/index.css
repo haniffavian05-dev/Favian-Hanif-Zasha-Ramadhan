@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-headline: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+
+  --color-primary: #6541c4;
+  --color-primary-fixed: #ab8eff;
+  --color-surface: #f1f8fa;
+  --color-on-surface: #293032;
+  --color-on-surface-variant: #565d5f;
+  --color-surface-container: #e1eaec;
+  --color-surface-container-low: #eaf2f5;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-high: #dae4e7;
+  --color-surface-container-highest: #d4dfe2;
+  --color-secondary: #2958ae;
+  --color-secondary-container: #c0d1ff;
+  --color-tertiary: #635c2b;
+  --color-tertiary-container: #fdf2b3;
+  --color-error: #b41340;
+  --color-error-container: #f74b6d;
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-on-surface font-sans;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-headline;
+  }
+}
+
+.primary-gradient {
+  background: linear-gradient(135deg, #6541c4 0%, #ab8eff 100%);
+}
+
+.custom-shadow {
+  box-shadow: 0px 20px 40px rgba(41, 48, 50, 0.06);
+}
+
